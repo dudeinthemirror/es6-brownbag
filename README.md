@@ -1,22 +1,12 @@
-# algo-data-struct
+# es6-brownbag
 
-Javascript solutions to exercises
+Repo for ES6 brownbag presentation
 
-- Algorithms
-- Data Structures
-
-# To run a script:
+# To run an exercise:
 
 ```
-cd src
-../node_modules/babel-cli/bin/babel-node.js for_of.js
+yarn install
+../node_modules/babel-cli/bin/babel-node.js ./src/2-rest/1-variadic-func
 or
-npx babel-node ./for_of.js
-```
-
-# To test a script:
-
-```
-cd src
-yarn -s test ./anagrams.test.js
+npx babel-node ./src/2-rest/1-variadic-func
 ```
