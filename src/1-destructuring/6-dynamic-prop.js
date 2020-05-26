@@ -12,4 +12,4 @@ const inObj = {
 
 const dynKey = 'd';
 const { [dynKey]: dynamic } = inObj;
-console.log(dynamic);
+console.log('dynamic :', dynamic);

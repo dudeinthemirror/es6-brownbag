@@ -4,7 +4,7 @@ function convertCurrency(rate, ...amounts) {
 }
 
 let converted = convertCurrency(1.5, 10, 20, 30, 40, 50);
-console.log(converted);
+console.log('converted :', converted);
 
 converted = convertCurrency(2, 30, 40, 50);
-console.log(converted);
+console.log('converted :', converted);

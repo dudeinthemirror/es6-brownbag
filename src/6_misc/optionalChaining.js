@@ -11,22 +11,26 @@ const obj = {
 };
 
 // nested prop
-// console.log(obj.e.h.t); // <-- cannot read prop 't' of undefined
+// ----------------
+console.log(obj.e.h.t); // <-- cannot read prop 't' of undefined
 
-// console.log(obj && obj.e && obj.e.h && obj.e.h.t);
-// console.log(obj.e?.h?.t);
+// console.log('t :', obj && obj.e && obj.e.h && obj.e.h.t);
+// console.log('t :', obj.e?.h?.t);
 
+// dynamic prop
 // console.log(obj?.['prop' + 'number']);
 
 // array
+// ----------------
 // const arr = [1, 2, 3, 4];
 // let arrItem = arr?.[8];
-// console.log(arrItem);
+// console.log('arrItem :', arrItem);
 
 // function
+// ----------------
 // const someFunc = (onSuccess, onError) => {
 //   try {
-//     if (asdf === 1) {
+//     if (1 === 1) {
 //       onSuccess();
 //     }
 //   } catch (error) {
@@ -42,4 +46,5 @@ const obj = {
 // someFunc(() => console.log('SUCCESS'));
 
 // caveat
+// ----------------
 // obj.e?.h?.t = 1; // <-- invalid left hand side in assignment

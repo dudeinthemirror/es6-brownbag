@@ -7,12 +7,12 @@ const inObj = {
   d: '444',
   e: '555',
 };
-// for (let key in inObj) {
-//   console.log(key);
-// }
+for (let key in inObj) {
+  console.log(key);
+}
 
-// ----------------
 // own props vs. inherited
+// ----------------
 const getAllPropNames = (obj) => {
   let result = new Set();
   while (obj) {

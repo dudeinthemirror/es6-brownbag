@@ -17,18 +17,19 @@ const obj4 = {
 };
 
 let combined;
-// ---------------------
 // disjunct keys
-combined = { ...obj1, ...obj2 }; // Object.assign({}, obj1, obj2);
-console.log(combined);
-
 // ---------------------
+// combined = { ...obj1, ...obj2 }; // Object.assign({}, obj1, obj2);
+// console.log(combined);
+
 // common keys
+// ---------------------
 // combined = { ...obj1, ...obj3 }; // the second object values prevail
 // console.log(combined);
 
-// combined = { ...obj2, ...obj4 };
-// console.log(combined);
+combined = { ...obj2, ...obj4 };
+console.log(combined);
 
-// console.log(JSON.stringify(combined, null, '    '));
-// console.table(combined);
+// alternative ways to display result
+console.log(JSON.stringify(combined, null, '    '));
+console.table(combined);

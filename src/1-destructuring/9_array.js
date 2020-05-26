@@ -2,14 +2,14 @@ const inArr = [10, 20, 30, 40, 50];
 
 const [ten, twenty, ...tail] = inArr;
 
-console.log(ten);
-console.log(twenty);
-console.log(tail);
+// console.log('ten :', ten);
+// console.log('twenty :', twenty);
+// console.log('tail :', tail);
 
 // const [, , , forty, fifty] = inArr;
-// console.log(fifty);
-// console.log(forty);
+// console.log('fifty :', fifty);
+// console.log('forty :', forty);
 
-// using pop() !! changes inArr !!
 // console.log(inArr.pop());
 // console.log(inArr.pop());
+// console.log("inArr after pop's :", inArr); // using pop changes original inArr !!

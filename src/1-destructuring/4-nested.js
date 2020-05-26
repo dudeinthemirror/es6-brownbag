@@ -13,11 +13,11 @@ const inObj = {
 const {
   e: { w },
 } = inObj;
-console.log(w);
+console.log('w :', w);
 
 const {
   e: {
     x: { y },
   },
 } = inObj;
-console.log(y);
+console.log('y :', y);

@@ -5,7 +5,9 @@ const expense_trip_segments = [
 ];
 
 for (const { start_location } of expense_trip_segments) {
-  console.log(start_location);
+  console.log('start_location :', start_location);
 }
 
-// expense_trip_segments.map(({ start_location }) => console.log(start_location));
+// expense_trip_segments.map(({ start_location }) =>
+//   console.log('start_location :', start_location)
+// );

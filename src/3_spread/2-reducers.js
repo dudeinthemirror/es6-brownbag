@@ -35,6 +35,7 @@ let newState = () => {
 console.log('state before: ', state);
 console.log('state after: ', newState());
 
+// new action
 action = {
   type: 'SET_DISTANCE',
   payload: {
@@ -44,6 +45,7 @@ action = {
   },
 };
 
+// same reducer (replace)
 newState = () => {
   const {
     mileage: { distance },
@@ -59,6 +61,7 @@ newState = () => {
 // console.log('state after: ', newState());
 
 // SCENARIO 2 - append
+// new reducer (append)
 newState = () => {
   const {
     mileage: { distance },

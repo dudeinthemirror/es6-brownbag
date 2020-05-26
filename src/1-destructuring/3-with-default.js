@@ -11,4 +11,5 @@ const inObj = {
 };
 
 const { c, f = 'n/a' } = inObj;
-console.log(c, f);
+console.log('c :', c);
+console.log('f :', f);

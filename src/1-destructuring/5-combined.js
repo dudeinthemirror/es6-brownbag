@@ -12,11 +12,11 @@ const inObj = {
 
 const {
   c,
-  f = 'f is n/a',
+  f = 'n/a',
   e: {
-    x: { t = 't is n/a' },
+    x: { t = 'n/a' },
   },
 } = inObj;
-console.log(c);
-console.log(f);
-console.log(t);
+console.log('c :', c);
+console.log('f :', f);
+console.log('t :', t);

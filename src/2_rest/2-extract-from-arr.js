@@ -9,4 +9,4 @@ console.log('footmen:', footmen);
 
 // extract all after first two
 // const [, , ...rookies] = footmen;
-// console.log(rookies);
+// console.log('rookies :', rookies);

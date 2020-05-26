@@ -23,7 +23,7 @@ const getSongsSequential = async () => {
   }
 };
 
-getSongsSequential();
+// getSongsSequential();
 
 const getSongsParallel = async () => {
   try {
@@ -31,12 +31,12 @@ const getSongsParallel = async () => {
       getLyrics('Pink Floyd', 'Wish You Were Here'),
       getLyrics('Dire Straits', 'Private Investigations'),
       getLyrics('Notting Hillbillies', 'Railroad Worksong'),
-      getLyrics('Bogus artist', 'Bogus title'),
+      // getLyrics('Bogus artist', 'Bogus title'),
     ]);
     console.log(lyrics1.data);
     console.log(lyrics2.data);
     console.log(lyrics3.data);
-    console.log(lyrics4.data);
+    // console.log(lyrics4.data);
   } catch (error) {
     console.log('Error: ', error.message);
   }

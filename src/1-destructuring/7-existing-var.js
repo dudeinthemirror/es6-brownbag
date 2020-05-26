@@ -12,4 +12,4 @@ const inObj = {
 
 let d = 'FourFour';
 ({ d } = inObj);
-console.log(d);
+console.log('d :', d);
