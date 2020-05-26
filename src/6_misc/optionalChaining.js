@@ -12,4 +12,5 @@ const obj = {
 
 // console.log(obj.e.h.t);
 
+// console.log(obj && obj.e && obj.e.h && obj.e.h.t);
 console.log(obj.e?.h?.t);
