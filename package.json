@@ -11,7 +11,7 @@
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "7.8.3",
     "@babel/plugin-proposal-optional-chaining": "7.9.0",
-    "axios": "^0.19.2",
+    "axios": "0.19.2",
     "babel-plugin-transform-object-rest-spread": "6.23.0",
     "babelify-es6-polyfill": "1.0.4",
     "crypto-js": "3.1.9-1",
@@ -50,21 +50,9 @@
     "testPathIgnorePatterns": [
       "<rootDir>/node_modules/"
     ],
-    "preset": "react-native",
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/app/__mocks__/fileMock.js",
       "\\.(css|less)$": "identity-obj-proxy"
-    },
-    "reporters": [
-      "default",
-      [
-        "<rootDir>/node_modules/jest-html-reporter",
-        {
-          "pageTitle": "React Native Tests",
-          "outputPath": "./reports/react-native-tests.html",
-          "includeFailureMsg": true
-        }
-      ]
-    ]
+    }
   }
 }
