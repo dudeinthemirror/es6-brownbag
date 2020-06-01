@@ -96,7 +96,7 @@ describe('test MileageDataIsCompleteOLD', () => {
   test('should return false', () => {
     mileageData = {
       ...mileageData,
-      expense_date: undefined,
+      distance: undefined,
     };
     const res = MileageDataIsCompleteOLD(mileageData, mileageConfig);
     expect(res).toEqual(false);
@@ -220,7 +220,7 @@ describe('test mileageDataIsComplete', () => {
   test('should return false', () => {
     mileageData = {
       ...mileageData,
-      expense_date: undefined,
+      distance: undefined,
     };
     const res = mileageDataIsComplete(mileageData, mileageConfig);
     expect(res).toEqual(false);

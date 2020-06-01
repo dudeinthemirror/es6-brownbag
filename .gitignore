@@ -1,3 +1,4 @@
 /node_modules
 /coverage
 /.vscode/settings.json
+/src/.DS_Store
