@@ -1,3 +1,20 @@
+const mileageData = {
+  distance: 54,
+  expense_mileage_vehicle_type: { id: 123 },
+  expense_mileage_region: { id: 456 },
+  passenger_count: 3,
+};
+
+const mileageConfig = {
+  vehicleEnabled: true,
+  regionEnabled: true,
+  passengersEnabled: true,
+  unit: 'Mi',
+};
+
+// ---------------
+// Existing
+// ---------------
 function addCalculateTotalMultiStopOLD(hash, mileageData, mileageConfig) {
   const expense_trip_mileage = {};
   const expense_trip = {};
@@ -19,6 +36,11 @@ function addCalculateTotalMultiStopOLD(hash, mileageData, mileageConfig) {
   return hash;
 }
 
+// console.log(addCalculateTotalMultiStopOLD({}, mileageData, mileageConfig));
+
+// ---------------
+// Refactored
+// ---------------
 const addCalculateTotalMultiStop = (mileageData, mileageConfig) => {
   const {
     vehicleEnabled,
@@ -50,21 +72,6 @@ const addCalculateTotalMultiStop = (mileageData, mileageConfig) => {
   };
 };
 
-const mileageData = {
-  distance: 54,
-  expense_mileage_vehicle_type: { id: 123 },
-  expense_mileage_region: { id: 456 },
-  passenger_count: 3,
-};
-
-const mileageConfig = {
-  vehicleEnabled: true,
-  regionEnabled: true,
-  passengersEnabled: true,
-  unit: 'Mi',
-};
-
-// console.log(addCalculateTotalMultiStopOLD({}, mileageData, mileageConfig));
 // console.log(addCalculateTotalMultiStop(mileageData, mileageConfig));
 
 export { addCalculateTotalMultiStopOLD, addCalculateTotalMultiStop };

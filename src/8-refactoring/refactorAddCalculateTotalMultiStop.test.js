@@ -49,7 +49,6 @@ describe('test addCalculateTotalMultiStopOLD', () => {
       expense_trip: {
         expense_trip_mileage: {
           total_distance: 54,
-          // expense_mileage_vehicle_type_id: 123,
           expense_mileage_region_id: 456,
           passenger_count: 3,
           total_distance_unit: 'Mi',
@@ -70,7 +69,6 @@ describe('test addCalculateTotalMultiStopOLD', () => {
         expense_trip_mileage: {
           total_distance: 54,
           expense_mileage_vehicle_type_id: 123,
-          // expense_mileage_region_id: 456,
           passenger_count: 3,
           total_distance_unit: 'Mi',
         },
@@ -91,7 +89,6 @@ describe('test addCalculateTotalMultiStopOLD', () => {
           total_distance: 54,
           expense_mileage_vehicle_type_id: 123,
           expense_mileage_region_id: 456,
-          // passenger_count: 3,
           total_distance_unit: 'Mi',
         },
       },
@@ -111,9 +108,6 @@ describe('test addCalculateTotalMultiStopOLD', () => {
       expense_trip: {
         expense_trip_mileage: {
           total_distance: 54,
-          // expense_mileage_vehicle_type_id: 123,
-          // expense_mileage_region_id: 456,
-          // passenger_count: 3,
           total_distance_unit: 'Mi',
         },
       },
@@ -131,7 +125,6 @@ describe('test addCalculateTotalMultiStopOLD', () => {
       expense_trip: {
         expense_trip_mileage: {
           total_distance: 54,
-          // expense_mileage_vehicle_type_id: 123,
           expense_mileage_region_id: 456,
           passenger_count: 3,
           total_distance_unit: 'Mi',
@@ -153,7 +146,6 @@ describe('test addCalculateTotalMultiStopOLD', () => {
           total_distance: 54,
           expense_mileage_vehicle_type_id: 123,
           expense_mileage_region_id: 456,
-          // passenger_count: 3,
           total_distance_unit: 'Mi',
         },
       },

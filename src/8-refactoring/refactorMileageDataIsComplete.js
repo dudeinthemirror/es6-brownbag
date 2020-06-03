@@ -1,3 +1,6 @@
+// ---------------
+// Existing
+// ---------------
 const MileageDataIsCompleteOLD = (mileageData, mileageConfig) => {
   const regionRequired = mileageConfig.regionEnabled;
   const vehicleRequired = mileageConfig.vehicleEnabled;
@@ -34,6 +37,9 @@ const MileageDataIsCompleteOLD = (mileageData, mileageConfig) => {
   return false;
 };
 
+// ---------------
+// Refactored
+// ---------------
 const mileageDataIsComplete = (mileageData, mileageConfig) => {
   const {
     regionEnabled,
@@ -95,7 +101,7 @@ const mileageData = {
   end_address: 'Palo Alto, CA, USA',
 };
 
-// console.log(mileageDataIsComplete(mileageData, mileageConfig));
 // console.log(MileageDataIsCompleteOLD(mileageData, mileageConfig));
+// console.log(mileageDataIsComplete(mileageData, mileageConfig));
 
 export { MileageDataIsCompleteOLD, mileageDataIsComplete };
