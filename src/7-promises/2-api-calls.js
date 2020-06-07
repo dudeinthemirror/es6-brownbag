@@ -43,3 +43,24 @@ const getSongsParallel = async () => {
 };
 
 // getSongsParallel();
+
+const getSongsParallelDynamicList = async () => {
+  try {
+    const params = [
+      { artist: 'Pink Floyd', title: 'Wish You Were Here' },
+      { artist: 'Dire Straits', title: 'Private Investigations' },
+      { artist: 'Notting Hillbillies', title: 'Railroad Worksong' },
+    ];
+
+    let promiseList = [];
+    for (let line of params) {
+      promiseList.push('getLyrics(line.artist, line.title)');
+    }
+
+    Promise.all(promiseList.map((v) => eval(v)));
+  } catch (error) {
+    console.log('Error: ', error.message);
+  }
+};
+
+// getSongsParallelDynamicList();
