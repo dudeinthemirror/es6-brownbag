@@ -55,9 +55,10 @@ const getSongsParallelDynamicList = async () => {
     let promiseList = [];
     for (let line of params) {
       promiseList.push(
-        'getLyrics(line.artist, line.title).then((lyrics) => console.log(lyrics.data))'
+        `getLyrics('${line.artist}', '${line.title}').then((lyrics) => console.log(lyrics.data))`
       );
     }
+    console.log(promiseList);
 
     Promise.all(promiseList.map((v) => eval(v)));
   } catch (error) {
@@ -65,4 +66,4 @@ const getSongsParallelDynamicList = async () => {
   }
 };
 
-// getSongsParallelDynamicList();
+getSongsParallelDynamicList();
