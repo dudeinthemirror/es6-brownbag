@@ -2,7 +2,10 @@ const inObj = {
   c: 33,
   d: 44,
   e: {
-    w: 1000,
+    w: {
+      arr: [1000, 2002],
+      ts: 'asdaf',
+    },
     x: {
       y: 2000,
       z: 3000,
@@ -15,9 +18,12 @@ const inObj = {
 const {
   e: { w },
 } = inObj;
-console.log('w:', w);
-// output:
-// w: 1000
+const { arr } = w;
+const [elem1, elem2] = arr;
+
+console.log('---- arr:', JSON.stringify(arr, null, '  '));
+console.log('---- elem1:', elem1);
+console.log('---- elem2:', elem2);
 
 // extract prop y which is nested inside prop x
 // which is nested inside e
@@ -28,8 +34,7 @@ const {
   },
 } = inObj;
 console.log('y:', y);
-// output:
-// y: 2000
+output: y: 2000;
 
 // Old way:
 // const w = inObj.e.w;
