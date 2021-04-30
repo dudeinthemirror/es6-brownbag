@@ -1,7 +1,8 @@
 import axios from 'axios';
 
+// ultimele patru sunt YGRECHASHYGRECix
 const API_KEY =
-  'f7lpgA-9CrTHmAfNX0ApGygzqQpkiLzydl5hykYXUjxk5Ke8nAGfRZpTDtmVoI9ZO6dLQ9EFwrsjwK8iAZGz7EIt2tPNl7pW1iklnk3ujaDjWqTyzSbMPYqMvY1oYHYx';
+  'f7lpgA-9CrTHmAfNX0ApGygzqQpkiLzydl5hykYXUjxk5Ke8nAGfRZpTDtmVoI9ZO6dLQ9EFwrsjwK8iAZGz7EIt2tPNl7pW1iklnk3ujaDjWqTyzSbMPYqMvY1o';
 
 const yelpGQL = axios.create({
   url: 'https://api.yelp.com/v3/graphql',
@@ -134,7 +135,7 @@ yelpGQL({
   data: searchBusinessesByLocation('grocery', 'palo alto'),
 }).then(({ data }) => {
   const businesses = data.data.search.business;
-  businesses.forEach((b) => {
+  businesses.forEach(b => {
     console.log('Name, location ', b.name, b.location.city);
   });
 });
